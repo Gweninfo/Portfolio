@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vi Portfolio</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="https://kit.fontawesome.com/aab729e976.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- header -------------------->
+    <div id="header">
+        <div class="container">
+            <!-- navbar -->
+            <nav>
+                <img src="./img/logo.png" class="logo" alt="logo web">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">My Lab</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark"onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header__text">
+                <p>Software Engineer </p>
+                <h1>Hi, I'm <span>Vi(Gwen)</span><br> Android Developer</h1>
+            </div>
+        </div>
+    </div>
+    <!-- about -------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about_col_1">
+                    <img src="./img/user.png">
+                </div>
+                <div class="about_col_2">
+                    <hi class="sub__title">About Me</hi>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea animi molestias aperiam aut accusamus! Ipsa ea obcaecati rerum quisquam quod pariatur, inventore perspiciatis esse? Ea dolorum fugit excepturi consectetur sit!</p>
+                    <div class="tab__titles">
+                        <p class="tab__links active__link" onclick="opentab('Muctieu')">Mục tiêu</p>
+                        <p class="tab__links" onclick="opentab('Chucnang')">Chức năng</p>
+                    </div>
+                    <div class="tab__contents active__tab" id="Muctieu">
+                        <ul>
+                            <li><span>Trang web Portfolio</span><br>Áp dụng các kiến ​​thức đã học để xây dựng giao diện. </li>
+                            <li><span>Tạo ra một trang thông tin cá nhân.</span></li>
+                            <li><span>Nhập môn Web & Ứng dụng </span> <br>Báo cáo cuối môn của thầy Nghĩa!</li>
+                        </ul>
+                    </div>
+                    <div class="tab__contents" id="Chucnang">
+                        <ul>
+                            <li><span>Mobile/desktop</span><br> Tương thích với thiết bị di động.</li>
+                            <li><span>Hiệu ứng</span> <br> chuyển đổi con trỏ chuột khi di chuyển liên kết. 
+                            <br>Hover các hình ảnh...v/v..
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-------------- Services ------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="container">My Services</h1>
+            <div class="services__list">
+                <div>
+                    <i class="fa-sharp fa-solid fa-code"></i>
+                    <h2>web Design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum nisi, rem, quo in assumenda eum totam autem eos asperiores corrupti mollitia doloremque officiis ea ducimus ipsa alias? Nesciunt, cupiditate assumenda?</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum nisi, rem, quo in assumenda eum totam autem eos asperiores corrupti mollitia doloremque officiis ea ducimus ipsa alias? Nesciunt, cupiditate assumenda?</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum nisi, rem, quo in assumenda eum totam autem eos asperiores corrupti mollitia doloremque officiis ea ducimus ipsa alias? Nesciunt, cupiditate assumenda?</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!------------------- Portfolio-------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub__title">My Project(labs)</h1>
+        <div class="project__list">
+            <div class="project">
+                <img src="./img/work-1.png" alt="">
+                <div class="layer">
+                    <h3>Kids Store App for PC</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium expedita </p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="./img/work-2.png" alt="">
+                <div class="layer">
+                    <h3>Website Portfolio</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium expedita </p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="./img/work-3.png" alt="">
+                <div class="layer">
+                    <h3>Sodoku App For Android</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium expedita </p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+           
+        </div>
+        <a href="https://vittt.000webhostapp.com/LABS" class="btn">See My Labs</a>
+    </div>
+</div>
+<!----------------------- contact --------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact__left">
+                <h1 class="sub__title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>Vivi26081@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i>+382526831</p>
+                <div class="social__icons">
+                    <a href="https://www.facebook.com/numbernumber01/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://bom.so/PpxW3S"><i class="fa-brands fa-square-instagram"></i> </a>
+                    <a href="https://github.com/Gweninfo"><i class="fa-brands fa-square-github"></i></a>
+                </div>
+                <a href="./img/my-cv.pdf" download class="btn btn2">Download My CV</a>
+            </div>
+            <div class="contact__right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- footer -->
+<div class="copyright">
+    <p>Copyright ©2022 All rights reserved | This template is made with <i class="fa-solid fa-heart"></i> by Vi</p>
+</div>
+    <!-- script -->
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab__Link");
+        var tabcontents = document.getElementsByClassName("tab__contents");
+        function opentab(tabname)
+        {
+            for(tablink of tablinks){
+            tablink.classList.remove("active__link");
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active__tab");
+            }
+            event.currentTarget.classList.add("active__link")
+            document.getElementById(tabname).classList.add("active__tab");
+        }
+        
+    </script>
+    <!-- // navbar for mobile -->
+    <script>
+        var sidemenu =document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px"
+        }
+    </script>
+    <!-- contact form -->
+    <script>
+        const scriptURL = 'https://script.google.com/a/macros/student.stu.edu.vn/s/AKfycbynx1ARj5yoFg-S__AaN0pMCMgkffjrzH92YU1-r7lG_0A__8TFUmNXmk2lgXzl-dDO/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
+</html>
