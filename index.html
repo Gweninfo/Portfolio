@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vi Portfolio</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/aab729e976.js" crossorigin="anonymous"></script>
 </head>
 
@@ -17,48 +21,55 @@
             <!-- navbar -->
             <nav>
                 <img src="./img/logo.png" class="logo" alt="logo web">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">My Lab</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                <ul id="sidemenu" data-aos="fade-left">
+                    <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500"><a href="#header">Home</a></li>
+                    <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1650"><a href="#about">About</a></li>
+                    <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1750"><a href="#services">Services</a></li>
+                    <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1850"><a href="#portfolio">My Lab</a></li>
+                    <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1950"><a href="#contact">Contact</a></li>
                     <i class="fa-solid fa-circle-xmark"onclick="closemenu()"></i>
                 </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                <i style="color:white ;" data-aos="fade-down" data-aos-easing="linear"data-aos-duration="1500" class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
-            <div class="header__text">
-                <p>Software Engineer </p>
-                <h1>Hi, I'm <span>Vi(Gwen)</span><br> Android Developer</h1>
+            <div class="header__text" data-aos="fade-right" data-aos-duration="3000">
+                <p style="color: white;">Software Engineer </p>
+                <h1 style="color: white;">Hi, I'm <span>Vi(Gwen)</span><br> Android Developer</h1>
             </div>
         </div>
     </div>
     <!-- about -------------------->
-    <div id="about">
+    <div id="about" style="background-color: black;">
         <div class="container">
             <div class="row">
-                <div class="about_col_1">
+                <div class="about_col_1" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
                     <img src="./img/user.png">
                 </div>
-                <div class="about_col_2">
+                <div class="about_col_2" data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500">
                     <hi class="sub__title">About Me</hi>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea animi molestias aperiam aut accusamus! Ipsa ea obcaecati rerum quisquam quod pariatur, inventore perspiciatis esse? Ea dolorum fugit excepturi consectetur sit!</p>
+                    <p>I make websites and applications. Coding with strong passion.</p>
                     <div class="tab__titles">
                         <p class="tab__links active__link" onclick="opentab('Muctieu')">Mục tiêu</p>
                         <p class="tab__links" onclick="opentab('Chucnang')">Chức năng</p>
                     </div>
-                    <div class="tab__contents active__tab" id="Muctieu">
-                        <ul>
-                            <li><span>Trang web Portfolio</span><br>Áp dụng các kiến ​​thức đã học để xây dựng giao diện. </li>
-                            <li><span>Tạo ra một trang thông tin cá nhân.</span></li>
-                            <li><span>Nhập môn Web & Ứng dụng </span> <br>Báo cáo cuối môn của thầy Nghĩa!</li>
+                    <div class="tab__contents active__tab" id="Muctieu" >
+                        <ul >
+                            <li data-aos="fade-left"
+                            data-aos-duration="3000"><span>Website Portfolio</span><br>Apply the knowledge learned to build interfaces.</li>
+                            <li data-aos="fade-left"
+                            data-aos-duration="3000"><span>Create a personal information page.</span></li>
+                            <li data-aos="fade-left"
+                            data-aos-duration="3000"><span>Introduction to Web & Applications</span> <br>The final report of Mr. Nghia!</li>
                         </ul>
                     </div>
-                    <div class="tab__contents" id="Chucnang">
-                        <ul>
-                            <li><span>Mobile/desktop</span><br> Tương thích với thiết bị di động.</li>
-                            <li><span>Hiệu ứng</span> <br> chuyển đổi con trỏ chuột khi di chuyển liên kết. 
-                            <br>Hover các hình ảnh...v/v..
+                    <div  class="tab__contents" id="Chucnang"  >
+                        <ul >
+                            <li ><span>Mobile/desktop</span><br> Compatible with mobile devices.</li>
+                            <li><span>Effect</span> <br> Move the mouse pointer when moving the link.
+                            <br>Hover the pictures...v/v..
                         </ul>
                     </div>
                 </div>
@@ -67,23 +78,25 @@
     </div>
 
         <!-------------- Services ------------------->
-    <div id="services">
+    <div id="services" style= " background-color: black;" >
         <div class="container">
-            <h1 class="container__text">My Services</h1>
-            <div class="services__list">
-                <div>
+            <h1 class= "container__text " style="color:white;" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"> My Services </h1>
+            <div class="services__list" style="color: white;">
+                <div data-aos="zoom-in" data-aos-duration="2000">
                     <i class="fa-sharp fa-solid fa-code"></i>
                     <h2>web Design</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum nisi, rem, quo in assumenda eum totam autem eos asperiores corrupti mollitia doloremque officiis ea ducimus ipsa alias? Nesciunt, cupiditate assumenda?</p>
+                    <p>I make web application. Convert Figma, PSD, AI to HTML/CSS </p>
                     <a href="#">Learn More</a>
                 </div>
-                <div>
+                <div data-aos="zoom-in" data-aos-duration="2000">
                     <i class="fa-brands fa-app-store-ios"></i>
                     <h2>App Design</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum nisi, rem, quo in assumenda eum totam autem eos asperiores corrupti mollitia doloremque officiis ea ducimus ipsa alias? Nesciunt, cupiditate assumenda?</p>
                     <a href="#">Learn More</a>
                 </div>
-                <div>
+                <div data-aos="zoom-in" data-aos-duration="2000"> 
                     <i class="fa-sharp fa-solid fa-crop"></i>
                     <h2>UI/UX Design</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum nisi, rem, quo in assumenda eum totam autem eos asperiores corrupti mollitia doloremque officiis ea ducimus ipsa alias? Nesciunt, cupiditate assumenda?</p>
@@ -93,11 +106,15 @@
         </div>
     </div>
 <!------------------- Portfolio-------------- -->
-<div id="portfolio">
+<div id="portfolio" style="background-color: black;">
     <div class="container">
-        <h1 class="sub__title">My Project(labs)</h1>
+        <h1 class="sub__title" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">My Project(labs)</h1>
         <div class="project__list">
-            <div class="project">
+            <div class="project" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1500">
                 <img src="./img/work-1.png" alt="">
                 <div class="layer">
                     <h3>Kids Store App for PC</h3>
@@ -105,7 +122,9 @@
                     <a href="#"><i class="fa-solid fa-link"></i></a>
                 </div>
             </div>
-            <div class="project">
+            <div class="project" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1500">
                 <img src="./img/work-2.png" alt="">
                 <div class="layer">
                     <h3>Website Portfolio</h3>
@@ -113,7 +132,9 @@
                     <a href="#"><i class="fa-solid fa-link"></i></a>
                 </div>
             </div>
-            <div class="project">
+            <div class="project" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1500">
                 <img src="./img/work-3.png" alt="">
                 <div class="layer">
                     <h3>Sodoku App For Android</h3>
@@ -123,29 +144,30 @@
             </div>
            
         </div>
-        <a href="https://vittt.000webhostapp.com/LABS" class="btn">See My Labs</a>
+        <a href="./lab.html"class="btn">See My Labs</a>
+        
     </div>
 </div>
 <!----------------------- contact --------------------------->
-<div id="contact">
+<div id="contact" style="background-color: black;">
     <div class="container">
         <div class="row">
-            <div class="contact__left">
-                <h1 class="sub__title">Contact Me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i>Vivi26081@gmail.com</p>
-                <p><i class="fa-solid fa-phone-volume"></i>+382526831</p>
+            <div class="contact__left" >
+                <h1 class="sub__title" data-aos="zoom-out-right"data-aos-duration="1000">Contact Me</h1>
+                <p style="color: white;" data-aos="zoom-out-right"data-aos-duration="1500"><i class="fa-solid fa-paper-plane"></i>Vivi26081@gmail.com</p>
+                <p style="color: white;" data-aos="zoom-out-right"data-aos-duration="2000"><i class="fa-solid fa-phone-volume"></i>+382526831</p>
                 <div class="social__icons">
-                    <a href="https://www.facebook.com/numbernumber01/"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://bom.so/PpxW3S"><i class="fa-brands fa-square-instagram"></i> </a>
-                    <a href="https://github.com/Gweninfo"><i class="fa-brands fa-square-github"></i></a>
+                    <a href="https://www.facebook.com/numbernumber01/"><i data-aos="zoom-out-up"data-aos-duration="2500"class="fa-brands fa-facebook"></i></a>
+                    <a href="https://bom.so/PpxW3S"><i data-aos="zoom-out-up"data-aos-duration="2500" class="fa-brands fa-square-instagram"></i> </a>
+                    <a href="https://github.com/Gweninfo"><i data-aos="zoom-out-up"data-aos-duration="2500" class="fa-brands fa-square-github"></i></a>
                 </div>
-                <a href="./img/my-cv.pdf" download class="btn btn2">Download My CV</a>
+                <a href="./img/my-cv.pdf" data-aos="zoom-out-up"data-aos-duration="2500" download class="btn btn2">Download My CV</a>
             </div>
-            <div class="contact__right">
+            <div class="contact__right" data-aos="zoom-out-left"data-aos-duration="2500" style="background-color: black;">
                 <form name="submit-to-google-sheet">
                     <input type="text" name="name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="message"  rows="6" placeholder="Your Message"></textarea>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
             </div>
@@ -154,9 +176,17 @@
 </div>
 
 <!-- footer -->
-<div class="copyright">
-    <p>Copyright ©2022 All rights reserved | This template is made with <i class="fa-solid fa-heart"></i> by Vi</p>
+<div id="footer"  style="background-color:grey; " >
+    <div class="container">
+        <div class="copyright"     >
+            <p style="color: white;">Copyright ©2022 All rights reserved | This template is made with <i class="fa-solid fa-heart"></i> by Vi</p>
+        </div>
+    </div>
 </div>
+
+    <script>
+    AOS.init();
+     </script>
     <!-- script -->
 
     <script>
