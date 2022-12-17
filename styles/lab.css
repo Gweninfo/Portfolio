@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    max-width: 100%;
+    background-size: cover;
+}
+body {
+    background-color:gray;
+}
+.container {
+    padding: 10px 10%;
+    width: 100%;
+
+}
+ul {
+   display: flex;
+}
+li {
+    list-style: none;
+}
+ul li a {
+    text-decoration: none;
+    padding: 5px 1rem;
+    margin: 0 10px;
+    color: rgb(232,228,102);
+}
+ul li a:hover{
+    color: aliceblue;
+}
